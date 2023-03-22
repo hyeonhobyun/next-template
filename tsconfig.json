@@ -28,7 +28,7 @@
     "noUnusedLocals": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@dist/*": ["dist/*"],
+      "@asset/*": ["src/asset/*"],
       "@component/*": ["src/component/*"],
       "@helper/*": ["src/helper/*"],
       "@HOC/*": ["src/HOC/*"],
