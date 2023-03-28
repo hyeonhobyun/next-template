@@ -8,7 +8,7 @@ import { QueryClient } from '@tanstack/query-core';
 import { Hydrate, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { RecoilRoot } from 'recoil';
-import debounce from 'lodash/debounce';
+import { debounce } from 'lodash';
 import { WithErrorBoundary } from '@HOC/withErrorBoundary';
 import { WithThemeProvider } from '@HOC/withThemeProvider';
 import { DefaultGetStaticProps } from '@type/next-shared.types';

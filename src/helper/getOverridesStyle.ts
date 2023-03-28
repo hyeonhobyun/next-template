@@ -1,4 +1,4 @@
-import get from 'lodash/get';
+import { get } from 'lodash';
 import { StyleObject } from 'styletron-react';
 import { StyleOverride } from '@type/component.types';
 

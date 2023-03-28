@@ -84,11 +84,10 @@ const nextConfig = {
       exclude: ['error'],
     },
   }),
-  experimental: {
-    modularizeImports: {
-      lodash: {
-        transform: 'lodash/{{member}}',
-      },
+  modularizeImports: {
+    lodash: {
+      transform: 'lodash/{{member}}',
+      preventFullImport: true,
     },
   },
   async headers() {

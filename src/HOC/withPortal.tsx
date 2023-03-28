@@ -1,4 +1,3 @@
-import isNull from 'lodash/isNull';
 import React, {
   Dispatch,
   ReactNode,
@@ -10,6 +9,7 @@ import React, {
 import { createPortal } from 'react-dom';
 import { useKey, useMount } from 'react-use';
 import { useStyletron } from 'styletron-react';
+import { isNull } from 'lodash';
 import { OverrideObject } from '@type/component.types';
 import { StyledWithPortalBackgroundHolder } from '@HOC/withPortal.styled';
 import { isBrowserContext } from '@helper/isBrowserContext';
