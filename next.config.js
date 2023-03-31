@@ -1,6 +1,5 @@
 import SpriteSmithPlugin from 'webpack-spritesmith';
 import withPlugins from 'next-compose-plugins';
-import withPWA from 'next-pwa';
 import { existsSync, mkdirSync, readdirSync } from 'fs';
 import { join, resolve } from 'path';
 import generated from '@next/bundle-analyzer';
@@ -118,21 +117,4 @@ const nextConfig = {
   },
 };
 
-export default withPlugins(
-  [
-    withBundleAnalyzer,
-    [
-      withPWA,
-      {
-        pwa: {
-          maximumFileSizeToCacheInBytes: 2300000,
-          disable: IS_DEV_MODE,
-          dest: 'public',
-          dynamicStartUrlRedirect: '/',
-          cacheOnFrontEndNav: true,
-        },
-      },
-    ],
-  ],
-  nextConfig,
-);
+export default withPlugins([withBundleAnalyzer], nextConfig);

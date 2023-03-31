@@ -1,6 +1,7 @@
 # compiled output
-.next/
+.next
 **/*/dist
+storybook-static
 
 # dependencies
 /node_modules

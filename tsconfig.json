@@ -33,6 +33,7 @@
       "@helper/*": ["src/helper/*"],
       "@HOC/*": ["src/HOC/*"],
       "@script/*": ["src/script/*"],
+      "@stories/*": ["src/stories/*"],
       "@style/*": ["src/style/*"],
       "@type/*": ["src/type/*"],
     },
