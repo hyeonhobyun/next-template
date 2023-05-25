@@ -17,7 +17,7 @@
     "generate:typeHelper": "ts-node -P tsconfig.json -r tsconfig-paths/register src/script/typeHelper.ts",
     "postgenerate:typeHelper": "prettier --write src/type/assetTypeHelper.ts",
     "clean:build": "rm -rf .next",
-    "clean": "yarn run clean:build && rm -rf .yarn/cache",
+    "clean": "yarn run clean:build && rm -rf node_modules",
     "postclean": "yarn",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
